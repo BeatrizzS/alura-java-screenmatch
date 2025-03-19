@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.alura.screenmatch.calculos.Recomendacao;
 import br.com.alura.screenmatch.modelos.Episodio;
@@ -69,6 +71,9 @@ public class Principal {
     filmeDoPaulo.setDuracaoEmMinutos(200);
     filmeDoPaulo.setAnoLancamento(2003);
     filmeDoPaulo.avalia(10);
+
+
+    ArrayList<Filme> listaDeFilmes = new ArrayList<>();
     
     }
 
