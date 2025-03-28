@@ -1,6 +1,6 @@
 package br.com.alura.screenmatch.modelos;
 
-public class Titulo {
+public class Titulo implements Comparable<Titulo>{
     private String nome;
     private int anoLancamento;
     private boolean incluidoPlano;
@@ -76,6 +76,12 @@ public class Titulo {
     public int getClassificacao() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getClassificacao'");
+    }
+
+
+    @Override
+    public int compareTo(Titulo o) {
+        return this.getNome().compareTo(o.getNome());
     }
 
     
