@@ -9,13 +9,12 @@ import br.com.alura.screenmatch.modelos.Serie;
 public class Principal {
     public static void main(String[] args) throws Exception {
 
-    Filme meuFilme = new Filme();
-    meuFilme.setNome("O Poderoso chefão");
+    Filme meuFilme = new Filme("O Poderoso chefão");
+    //meuFilme.setNome("O Poderoso chefão");
     meuFilme.setAnoLancamento(1970);
     meuFilme.setDuracaoEmMinutos(180);
     System.out.println("Duração do filme: " + meuFilme.getDuracaoEmMinutos());
     
-
     meuFilme.exibeFichaTecnica();
     
     meuFilme.avalia(8);
@@ -43,8 +42,8 @@ public class Principal {
 
 
 
-    Filme outroFilme = new Filme();
-    outroFilme.setNome("O Poderoso chefão");
+    Filme outroFilme = new Filme("Avatar");
+    //outroFilme.setNome("O Poderoso chefão");
     outroFilme.setAnoLancamento(2023);
     outroFilme.setDuracaoEmMinutos(200);
 
@@ -66,8 +65,8 @@ public class Principal {
     filtro.filtra(episodio);
 
 
-    Filme filmeDoPaulo = new Filme();
-    filmeDoPaulo.setNome("Dogville");
+    Filme filmeDoPaulo = new Filme("Dogville");
+    //filmeDoPaulo.setNome("Dogville");
     filmeDoPaulo.setDuracaoEmMinutos(200);
     filmeDoPaulo.setAnoLancamento(2003);
     filmeDoPaulo.avalia(10);
