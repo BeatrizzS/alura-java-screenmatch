@@ -7,7 +7,15 @@ public class Titulo {
     private double somaAvaliacoes;
     private int totalAvaliacoes;
     private int duracaoEmMinutos;
+
     
+    
+    public Titulo(String nome, int anoLancamento) {
+        this.nome = nome;
+        this.anoLancamento = anoLancamento;
+    }
+
+
     public int gettotalAvaliacoes() {
         return totalAvaliacoes;
     }
@@ -62,6 +70,12 @@ public class Titulo {
 
     public double media(){
         return somaAvaliacoes/totalAvaliacoes;
+    }
+
+
+    public int getClassificacao() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getClassificacao'");
     }
 
     
