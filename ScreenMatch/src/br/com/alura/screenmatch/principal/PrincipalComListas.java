@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.LinkedList;
+import java.util.List;
 
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
@@ -21,7 +23,7 @@ public class PrincipalComListas {
 
             Filme f1 = filmeDoPaulo;
 
-    ArrayList<Titulo> lista = new ArrayList<>();
+    List<Titulo> lista = new LinkedList<>();
         lista.add(filmeDoPaulo);
         lista.add(meuFilme);
         lista.add(outroFilme);
@@ -48,6 +50,8 @@ public class PrincipalComListas {
         Collections.sort(lista);
         System.out.println(lista);
         lista.sort(Comparator.comparing(Titulo::getAnoLancamento));
+        System.out.println("Ordenando por ano:");
+        System.out.println(lista);
     }
 
 }
